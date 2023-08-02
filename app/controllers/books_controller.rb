@@ -11,6 +11,7 @@ before_action :correct_user, only: [:edit, :destroy]
     @book = Book.new
     @books = Book.all
     @book_new = Book.new
+    # @book_fav = Book.find(params[:id])
   end
 
   def create
